@@ -1,0 +1,5 @@
+# Make image from Dockerfile ( . means Dockerfile is in current directory)
+docker build -t jvm_pc .
+
+# Run newly created image
+docker run -it --rm jvm_pc
