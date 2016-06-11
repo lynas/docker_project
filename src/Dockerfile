@@ -4,9 +4,11 @@ MAINTAINER szlynas@gmail.com
 
 
 
-
+#[ installing necessary software]
 RUN apt-get update
-RUN apt-get install -y wget software-properties-common vim zsh git curl unzip
+RUN apt-get install -y wget software-properties-common vim zsh git curl unzip ruby-full
+RUN apt-get install -y rubygems
+RUN gem install rhc
 
 
 
